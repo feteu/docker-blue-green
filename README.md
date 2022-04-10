@@ -4,6 +4,7 @@
 
 ```bash
 docker network create docker-blue-green
+docker network create -d overlay --attachable docker-blue-green
 docker pull nginx:latest
 docker pull python:latest
 ```

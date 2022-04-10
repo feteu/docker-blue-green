@@ -8,6 +8,12 @@ docker pull nginx:latest
 docker pull python:latest
 ```
 
+### Logfile tailing
+
+```bash
+docker logs nginx -f | tee /tmp/$(date +%s)_nginx.out
+```
+
 ### Reload configuration file from within the nginx
 
 ```bash
